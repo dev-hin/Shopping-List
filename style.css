@@ -42,7 +42,7 @@ header h1 {
   font-weight: bold;
 }
 
-.gnome {
+#gnome {
   height: 180px;
   border: 2px solid #d39025;
   border-radius: 50%;
@@ -118,6 +118,18 @@ header h1 {
   color: red;
 }
 
+/* .toggle {
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: 0;
+  position: relative;
+  right: -340px;
+  margin: 20px 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+} */
+
 /* Items */
 
 .items {
@@ -142,4 +154,17 @@ header h1 {
   .items li {
     width: 100%;
   }
+}
+
+@media print{
+  body{ background-color:#FFFFFF; background-image:none; color:#000000 }
+  h1{ display:none;}
+  #gnome{ display:none;}
+  #clear{ visibility: hidden;}
+  .form-input{ display:none;}
+  .form-input-filter{ display:none;}
+  .form-control{ display:none;}
+  .filter{ display:none;}
+  .fa-solid{ display:none;}
+  .container{ width:100%;}
 }

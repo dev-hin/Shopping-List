@@ -1,3 +1,4 @@
+const body = document.querySelector('body');
 const itemForm = document.getElementById('item-form');
 const itemInput = document.getElementById('item-input');
 const itemList = document.getElementById('item-list');
@@ -60,6 +61,7 @@ function addItemToDOM(item) {
   // Add li to DOM
   itemList.appendChild(li);
 }
+
 function createButton(classes) {
   const button = document.createElement('button');
   button.className = classes;
@@ -170,6 +172,21 @@ function filterItems(e) {
     }
   });
 }
+
+// function toggleMode(e) {
+//   e.preventDefault();
+//   if (e.target.innerText === 'Light Mode') {
+//     e.target.innerText = 'Dark Mode';
+//     body.style.backgroundColor = '#fff';
+//     toggle.style.backgroundColor = '#fff';
+//     toggle.style.color = '#000';
+//     gnome.style.opacity = 0;
+//   } else {
+//     e.target.innerText = 'Light Mode';
+//     gnome.style.opacity = 1;
+//     body.style.backgroundColor = '#333';
+//   }
+// }
 
 function checkUI() {
   itemInput.value = '';
