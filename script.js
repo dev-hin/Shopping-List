@@ -16,7 +16,7 @@ function displayItems() {
 function onAddItemSubmit(e) {
   e.preventDefault();
 
-  const newItem = itemInput.value;
+  const newItem = itemInput.value.charAt(0).toUpperCase() + itemInput.value.slice(1)
 
   // Validate Input
   if (newItem === '') {
